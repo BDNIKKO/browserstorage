@@ -1,3 +1,4 @@
+initializeCart();
 
 function initializeCart() {
     if (!localStorage.getItem('cart')) {
@@ -36,6 +37,7 @@ document.getElementById('addItemForm').addEventListener('submit', function(event
 });
 
 document.getElementById('displayCartButton').addEventListener('click', displayCart);
+
 
 // event.preventDefault(): Prevents the default form submission behavior (e.g., reloading the page).
 // parseFloat(...): This function converts the string value obtained from the input field into a floating-point number.
