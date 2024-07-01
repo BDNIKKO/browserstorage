@@ -1,3 +1,4 @@
+initializeCart();
 
 function initializeCart() {
     // Check if 'cart' is not already present in localStorage
@@ -53,6 +54,7 @@ document.getElementById('addItemForm').addEventListener('submit', function(event
 
 // Add an event listener to the button with id 'displayCartButton' for the click event
 document.getElementById('displayCartButton').addEventListener('click', displayCart);
+
 
 // event.preventDefault(): Prevents the default form submission behavior (e.g., reloading the page).
 // parseFloat(...): This function converts the string value obtained from the input field into a floating-point number.
