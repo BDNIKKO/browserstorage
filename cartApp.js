@@ -43,7 +43,10 @@ document.getElementById('addItemForm').addEventListener('submit', function(event
     const itemPrice = parseFloat(document.getElementById('itemPrice').value);
     // Create a new item object with a unique id, name, and price
     const item = {
-        id: Date.now(), // Use the current timestamp as a unique id
+        id: Date.now(), 
+        // Use the current timestamp as a unique id
+        // Date.now() is a built-in JavaScript function that returns the number of milliseconds elapsed since January 1, 1970, 00:00:00 UTC
+        // the code generates a unique identifier based on the current timestamp. Because this value increases every millisecond, it is highly unlikely to produce duplicates, making it useful for unique IDs.
         name: itemName,
         price: itemPrice
     };
